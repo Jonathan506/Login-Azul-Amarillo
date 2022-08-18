@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to right, rgb(25, 14, 184), rgba(236, 233, 8, 0.884));
+}
+
+.contenedor{
+    margin-top: 125px;
+} 
+
+.cuadro-principal{
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 15px;
+    margin: auto;
+    height: 250px;
+    width: 50%;
+}
+
+.form-title{
+    padding-top: 20px;
+    margin: auto;
+    width: 100%;
+}
+
+.form-title h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+.formulario form{
+    height: 180px;
+    width: 100%;
+}
+
+div.inputs{
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width: 95%;
+}
+
+div.inputs input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ffffff;
+    color: #ffffff;
+    height: 30px;
+    margin: auto;
+    width: 100%;
+}
+
+div.inputs input:focus{
+    background: linear-gradient(to bottom, transparent, rgb(34, 34, 34));
+    outline: none;
+}
+
+form div.inputs label{
+    color: #ffffff73;
+}
+
+form div.boton{
+    margin: auto;
+    padding-top: 3px;
+    text-align: center;
+}
+
+form div.boton .form_submit[type="submit"]{
+    background-color: rgba(236, 233, 8, 0.884);
+    border: none;
+    border-radius: 5px;
+    color: rgb(25, 14, 184);
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: auto;
+    padding: 12px;
+    width: 40%;
+}
+
+form div.boton .form_submit[type="submit"]:hover{
+    background-color: #ffff00;
+}
+
+form div.boton .form_submit[type="submit"]:focus{
+    background-color: rgba(25, 14, 184, .7);
+    color: #ffffff;
+}
+
+form div.boton .form_submit[type="submit"]:active{
+    background: linear-gradient(to right, rgb(25, 14, 184), rgba(236, 233, 8, 0.884));
+}
