@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    /* padding: 0; */
     box-sizing: border-box;
 }
 
@@ -15,55 +14,55 @@ body{
 .cuadro-principal{
     background-color: rgba(0, 0, 0, .5);
     border-radius: 15px;
+    padding: 30px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 280px;
     width: 50%;
 }
 
 .form-title{
     color: #ffffff;
-    padding: 1rem;
+    margin: 0 0 30px;
+    padding: 0;
     text-align: center;
 }
 
-.formulario form{
-    height: 180px;
-    width: 100%;
+.content-inputs{
+    position: relative;
 }
 
-.inputs{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    padding-top: 10px;
-    width: 95%;
-}
-
-.inputs input{
+.content-inputs input{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid #ffffff;
     color: #ffffff;
-    height: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 10px 0;
     width: 100%;
 }
 
-.inputs input:focus{
-    background: linear-gradient(to bottom, transparent, rgb(34, 34, 34));
-    outline: none;
+.content-inputs label{
+    color: #ffffff73;
+    padding: 10px 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .5s;
 }
 
-.inputs label{
-    color: #ffffff73;
+.content-inputs input:focus ~ label,
+.content-inputs input:valid ~ label{
+    background: transparent;
+    font-size: 12px;
+    top: -20px;
+    left: 0;
 }
 
 .boton{
-    /* padding-top: 3px; */
     text-align: center;
 }
 
@@ -77,12 +76,12 @@ body{
     letter-spacing: 2px;
     text-transform: uppercase;
     padding: 10px 20px;
-    transition: all .2s;
+    transition: all .5s;
     width: 40%;
 }
 
 .form_submit[type="submit"]:hover,
-form div.boton .form_submit[type="submit"]:active{
+.form_submit[type="submit"]:active{
     background: linear-gradient(to right, rgb(25, 14, 184), rgba(236, 233, 8, 0.884));
     color: #fff;
 }
