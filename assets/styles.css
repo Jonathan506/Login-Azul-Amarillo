@@ -3,13 +3,10 @@
     box-sizing: border-box;
 }
 
-body{
+html{
     background: linear-gradient(to right, rgb(25, 14, 184), rgba(236, 233, 8, 0.884));
+    min-height: 100%;
 }
-
-.contenedor{
-    margin-top: 125px;
-} 
 
 .cuadro-principal{
     background-color: rgba(0, 0, 0, .5);
