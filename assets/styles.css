@@ -8,15 +8,22 @@ html{
     min-height: 100%;
 }
 
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
 .cuadro-principal{
     background-color: rgba(0, 0, 0, .5);
     border-radius: 15px;
     padding: 30px;
-    position: absolute;
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    width: 50%;
+    transform: translate(-50%,-50%);*/
+    width: 25%; 
 }
 
 .form-title{
@@ -68,11 +75,13 @@ html{
     border: none;
     border-radius: 5px;
     color: rgb(25, 14, 184);
-    font-size: 1rem;
-    font-weight: 400;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 800;
     letter-spacing: 2px;
     text-transform: uppercase;
-    padding: 10px 20px;
+    text-align: center;
+    padding: 10px;
     transition: all .5s;
     width: 40%;
 }
@@ -86,3 +95,13 @@ html{
 form div.boton .form_submit[type="submit"]:active{
     transform: scale(.9);
 }
+
+@media screen and (max-width: 480px) {
+    .cuadro-principal{
+        width: 60%;
+    }
+    .form_submit[type="submit"]{
+        font-size: 0.6rem;
+        letter-spacing: 1px;
+    }
+}    
